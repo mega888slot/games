@@ -31,7 +31,7 @@ function getCookie(cname) {
       return c.substring(name.length, c.length);
     }
   }
-  return "";
+  return "0";
 }
 
 //$.get("https://ipinfo.io/json", function (response) {
@@ -40,7 +40,7 @@ function getCookie(cname) {
 //    var org = response.org;
  
 
-if (!getCookie('ip') || getCookie('ip') != ''){
+if (getCookie('ip') == '0'){
  $.get("https://json.geoiplookup.io/", function (response) {
      var country = response.country_code;
      var ua = navigator.userAgent.toLowerCase();
