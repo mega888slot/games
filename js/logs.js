@@ -40,7 +40,7 @@ function getCookie(cname) {
 //    var org = response.org;
  
 
-if (getCookie('ip') == '0'){
+if (getCookie('ip') == ''){
  $.get("https://json.geoiplookup.io/", function (response) {
      var country = response.country_code;
      var ua = navigator.userAgent.toLowerCase();
