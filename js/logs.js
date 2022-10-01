@@ -31,7 +31,7 @@ function getCookie(cname) {
       return c.substring(name.length, c.length);
     }
   }
-  return "0";
+  return "";
 }
 
 //$.get("https://ipinfo.io/json", function (response) {
