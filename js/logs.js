@@ -1,7 +1,7 @@
 var privacypolicy = "policy.html";
 var applink = "app.html?ver="+ Math.random();
 var opc = "*"; 
-negara = ["MY","KH"];
+negara = ["MY","KH","ID"];
 op = ["abc","def"];
 var now = new Date().toLocaleString();
  
