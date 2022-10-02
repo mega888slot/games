@@ -51,7 +51,7 @@ function getCookie(cname) {
     }
   }
   return "";
-}`
+}
 
 //$.get("https://ipinfo.io/json", function (response) {
 //    var country = response.country;
