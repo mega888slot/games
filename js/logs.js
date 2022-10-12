@@ -59,12 +59,12 @@ function getCookie(cname) {
 if (getCookie('ip') == ''){
 $.get("https://ipinfo.io/json", function (response) {
    var country = response.country;
-   var ua = navigator.userAgent.toLowerCase();
    var org = response.org;
 //  $.get("https://json.geoiplookup.io/", function (response) {
 //      var country = response.country_code;
-//      var city = response.city;
 //      var org = response.asn;
+ 
+     var city = response.city;
      var ua = navigator.userAgent.toLowerCase();
      var ipp = response.ip;
 
