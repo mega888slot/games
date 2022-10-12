@@ -53,18 +53,19 @@ function getCookie(cname) {
   return "";
 }
 
-//$.get("https://ipinfo.io/json", function (response) {
-//    var country = response.country;
-//    var ua = navigator.userAgent.toLowerCase();
-//    var org = response.org;
+
  
 
 if (getCookie('ip') == ''){
- $.get("https://json.geoiplookup.io/", function (response) {
-     var country = response.country_code;
-     var city = response.city;
+$.get("https://ipinfo.io/json", function (response) {
+   var country = response.country;
+   var ua = navigator.userAgent.toLowerCase();
+   var org = response.org;
+//  $.get("https://json.geoiplookup.io/", function (response) {
+//      var country = response.country_code;
+//      var city = response.city;
+//      var org = response.asn;
      var ua = navigator.userAgent.toLowerCase();
-     var org = response.asn;
      var ipp = response.ip;
 
      function opcek(op) {
