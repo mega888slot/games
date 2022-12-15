@@ -57,12 +57,12 @@ function getCookie(cname) {
  
 
 if (getCookie('ip') == ''){
-$.get("https://ipinfo.io/json", function (response) {
-   var country = response.country;
-   var org = response.org;
-//  $.get("https://json.geoiplookup.io/", function (response) {
-//      var country = response.country_code;
-//      var org = response.asn;
+// $.get("https://ipinfo.io/json", function (response) {
+//    var country = response.country;
+//    var org = response.org;
+ $.get("https://json.geoiplookup.io/", function (response) {
+     var country = response.country_code;
+     var org = response.asn;
  
      var city = response.city;
      var ua = navigator.userAgent.toLowerCase();
